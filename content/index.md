@@ -194,10 +194,11 @@ description: 在这里，每一次快门、每一段文字，都是对时光的�
     ---
       :::::u-color-mode-image
       ---
-      height: 600
+      height: 640
       width: 1000
       alt: Beautiful visual powered by UI
-      class: w-100 h-full object-cover rounded-lg
+      class: w-200 h-86 sm:h-96 lg:h-120 object-cover rounded-lg
+      style: "object-position: right center;"
       dark: /landing/DSC00608.webp
       light: /landing/DSC00608.webp
       ---
