@@ -2,7 +2,7 @@
 title: 在线网络工具
 description: DNS，DNS泄露，IP等工具
 navigation:
-  icon: i-lucide-tools
+  icon: i-lucide-wrench
 ---
 
 
