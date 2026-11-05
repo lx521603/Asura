@@ -22,7 +22,7 @@ description: 在这里，每一次快门、每一段文字，都是对时光的�
   :::
 
 #links
-  :::u-button{size="lg" to="/getting-started" trailing-icon="i-lucide-arrow-right"}
+  :::u-button{size="lg" to="/docs/getting-started" trailing-icon="i-lucide-arrow-right"}
   开始阅读
   :::
   
