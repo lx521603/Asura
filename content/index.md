@@ -194,10 +194,10 @@ description: 在这里，每一次快门、每一段文字，都是对时光的�
     ---
       :::::u-color-mode-image
       ---
-      height: 500
+      height: 600
       width: 1000
       alt: Beautiful visual powered by UI
-      class: w-full h-132 object-cover rounded-lg
+      class: w-100 h-full object-cover rounded-lg
       dark: /landing/DSC00608.webp
       light: /landing/DSC00608.webp
       ---
@@ -219,7 +219,7 @@ description: 在这里，每一次快门、每一段文字，都是对时光的�
       :::::u-color-mode-image
       ---
       height: 620
-      width: 400
+      width: 650
       alt: Nuxt Image visual
       class: w-full h-120 object-cover rounded-lg
       dark: /landing/Q30A3919.webp

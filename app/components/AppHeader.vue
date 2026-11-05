@@ -24,14 +24,14 @@ const items = computed(() => [{
   to: '/',
   active: isDocs.value
 },{
-  label: 'Docs',
+  label: '折腾笔记',
   to: '/docs',
   active: isDocs.value
 }, {
   label: 'Blog',
   to: '/blog'
 }, {
-  label: 'Changelog',
+  label: '动态',
   to: '/changelog'
 }])
 </script>
@@ -61,7 +61,7 @@ const items = computed(() => [{
 
       <!-- 桌面端与移动端顶部右侧：纯图标跳转 -->
       <UButton
-        icon="i-lucide-x"
+        icon="i-simple-icons-x"
         color="neutral"
         variant="ghost"
         to="https://go.91.pt/x"
@@ -70,7 +70,7 @@ const items = computed(() => [{
       />
 
       <UButton
-        icon="i-lucide-x"
+        icon="i-simple-icons-x"
         color="neutral"
         variant="ghost"
         to="https://go.91.pt/x"
@@ -79,7 +79,7 @@ const items = computed(() => [{
       />
 
       <UButton
-        icon="i-lucide-instagram"
+        icon="i-simple-icons-instagram"
         color="neutral"
         variant="ghost"
         to="https://go.91.pt/instagram"
@@ -109,7 +109,7 @@ const items = computed(() => [{
       <!-- 移动端侧边栏底部：改成水平排列的纯图标，或者保留整行图标按钮 -->
       <div class="flex items-center gap-2">
         <UButton
-          icon="i-lucide-x"
+          icon="i-simple-icons-x"
           color="neutral"
           variant="subtle"
           to="https://go.91.pt/x"
@@ -118,7 +118,7 @@ const items = computed(() => [{
           class="flex-1"
         />
         <UButton
-          icon="i-lucide-instagram"
+          icon="i-simple-icons-instagram"
           color="neutral"
           variant="subtle"
           to="https://go.91.pt/instagram"

@@ -29,7 +29,7 @@ const loading = ref(false)
         to="https://go.91.pt/discord"
         target="_blank"
         icon="i-simple-icons-discord"
-        aria-label="Nuxt on Discord"
+        aria-label="Asura on Discord"
         color="neutral"
         variant="ghost"
       />
@@ -37,7 +37,7 @@ const loading = ref(false)
         to="https://go.91.pt/x"
         target="_blank"
         icon="i-simple-icons-x"
-        aria-label="Nuxt on X"
+        aria-label="Asura on X"
         color="neutral"
         variant="ghost"
       />
