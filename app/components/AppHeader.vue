@@ -20,12 +20,13 @@ watch(searchOpen, (value) => {
 })
 
 const items = computed(() => [{
+  label: '首页',
+  to: '/',
+  active: isDocs.value
+},{
   label: 'Docs',
   to: '/docs',
   active: isDocs.value
-}, {
-  label: 'Pricing',
-  to: '/pricing'
 }, {
   label: 'Blog',
   to: '/blog'
@@ -45,7 +46,7 @@ const items = computed(() => [{
         <AppLogo class="w-auto h-6 shrink-0" />
       </NuxtLink>
 
-      <TemplateMenu />
+      <!-- <TemplateMenu /> -->
     </template>
 
     <UNavigationMenu
@@ -58,28 +59,32 @@ const items = computed(() => [{
 
       <UContentSearchButton class="lg:hidden" />
 
+      <!-- 桌面端与移动端顶部右侧：纯图标跳转 -->
       <UButton
-        icon="i-lucide-log-in"
+        icon="i-lucide-x"
         color="neutral"
         variant="ghost"
-        to="/login"
+        to="https://go.91.pt/x"
+        target="_blank"
         class="lg:hidden"
       />
 
       <UButton
-        label="Sign in"
+        icon="i-lucide-x"
         color="neutral"
-        variant="outline"
-        to="/login"
+        variant="ghost"
+        to="https://go.91.pt/x"
+        target="_blank"
         class="hidden lg:inline-flex"
       />
 
       <UButton
-        label="Sign up"
+        icon="i-lucide-instagram"
         color="neutral"
-        trailing-icon="i-lucide-arrow-right"
+        variant="ghost"
+        to="https://go.91.pt/instagram"
+        target="_blank"
         class="hidden lg:inline-flex"
-        to="/signup"
       />
     </template>
 
@@ -101,6 +106,29 @@ const items = computed(() => [{
 
       <USeparator class="my-6" />
 
+      <!-- 移动端侧边栏底部：改成水平排列的纯图标，或者保留整行图标按钮 -->
+      <div class="flex items-center gap-2">
+        <UButton
+          icon="i-lucide-x"
+          color="neutral"
+          variant="subtle"
+          to="https://go.91.pt/x"
+          target="_blank"
+          block
+          class="flex-1"
+        />
+        <UButton
+          icon="i-lucide-instagram"
+          color="neutral"
+          variant="subtle"
+          to="https://go.91.pt/instagram"
+          target="_blank"
+          block
+          class="flex-1"
+        />
+      </div>
+
+      <!-- 
       <UButton
         label="Sign in"
         color="neutral"
@@ -114,7 +142,7 @@ const items = computed(() => [{
         color="neutral"
         to="/signup"
         block
-      />
+      /> -->
     </template>
   </UHeader>
 </template>

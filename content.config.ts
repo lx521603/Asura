@@ -33,7 +33,11 @@ const createImageSchema = () => z.object({
 })
 
 export const collections = {
-  index: defineCollection({
+  landing: defineCollection({
+    type: 'page',
+    source: 'index.md'
+  }),
+  /*index: defineCollection({
     source: '0.index.yml',
     type: 'page',
     schema: z.object({
@@ -70,7 +74,7 @@ export const collections = {
         links: z.array(createLinkSchema())
       })
     })
-  }),
+  }), */
   docs: defineCollection({
     source: '1.docs/**/*',
     type: 'page'

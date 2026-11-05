@@ -6,10 +6,10 @@ const title = page.value?.seo?.title || page.value?.title
 const description = page.value?.seo?.description || page.value?.description
 
 useSeoMeta({
-  title,
-  ogTitle: title,
-  description,
-  ogDescription: description
+  title: '光影手记',
+  ogTitle: '光影手记',
+  description: '用镜头代替眼睛，记录那些被光线温柔抚摸的角落与日常。',
+  ogDescription: '用镜头代替眼睛，记录那些被光线温柔抚摸的角落与日常。'
 })
 
 defineOgImage('Saas', { title, description })

@@ -80,12 +80,12 @@ if (post.value.image?.src) {
         <UContentSurround :surround="surround" />
       </UPageBody>
 
-      <template
+  <!--   <template
         v-if="post?.body?.toc?.links?.length"
         #right
       >
         <UContentToc :links="post.body.toc.links" />
-      </template>
+      </template>-->
     </UPage>
   </UContainer>
 </template>
