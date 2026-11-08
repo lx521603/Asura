@@ -10,7 +10,7 @@ const titleChars = computed(() => props.title ? props.title.split('') : [])
 </script>
 
 <template>
-  <section class="relative w-full overflow-hidden pt-20 pb-12 sm:pt-16 sm:pb-8">
+  <section class="relative w-full overflow-hidden pt-6 pb-2 sm:pt-10 sm:pb-12">
     <!-- 1. 背景网格和光晕 -->
     <div class="absolute inset-0 z-0 pointer-events-none">
       <div class="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
@@ -55,7 +55,7 @@ const titleChars = computed(() => props.title ? props.title.split('') : [])
       </h1>
 
       <!-- Description 插槽 -->
-      <div class="mx-auto max-w-2xl text-lg text-gray-600 dark:text-gray-300 mb-10 opacity-0 animate-fade-in-up" style="animation-delay: 600ms;">
+      <div class="mx-auto max-w-2xl text-lg text-gray-600 dark:text-gray-400 mb-10 opacity-0 animate-fade-in-up" style="animation-delay: 600ms;">
         <slot name="description">
           {{ description }}
         </slot>

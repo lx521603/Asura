@@ -36,40 +36,8 @@ jobs:
           REMOTE_USER: ${{ secrets.VPS_USER }}
           
           # ⚠️ 关键细节：SOURCE 末尾必须有斜杠 "/"
-          SOURCE: ".output/" 
+          SOURCE: ".output/public/" 
           TARGET: "/opt/asura/"
           ARGS: "-avz --delete"
 
-      # 🌟 步骤 2：在 VPS 上生成完整的 .env 并平滑重启 PM2 服务
-      - name: Update .env and Restart PM2 service on VPS
-        uses: appleboy/ssh-action@v1.0.3
-        with:
-          host: ${{ secrets.VPS_HOST }}
-          username: ${{ secrets.VPS_USER }}
-          key: ${{ secrets.VPS_SSH_KEY }}
-          script: |
-            # 1. 切换到目标目录
-            cd /opt/asura/
-            pm2 delete asura-app || true
-            # 2. 🌟 最佳实践：使用 Here-Doc 一次性生成/覆盖 .env 文件
-            # 这样无论以后加多少个 Secrets，都只需要在这里加一行，且不会遗漏或覆盖其他变量
-            cat <<EOF > .env
-            MY_GITHUB_TOKEN=${{ secrets.MY_GITHUB_TOKEN }}
-            STUDIO_GITHUB_CLIENT_ID=${{ secrets.STUDIO_GITHUB_CLIENT_ID }}
-            STUDIO_GITHUB_CLIENT_SECRET=${{ secrets.STUDIO_GITHUB_CLIENT_SECRET }}
-            # 如果未来还有 NUXT_PUBLIC_... 等其他变量，直接在这里追加即可
-            EOF
-            
-            echo "✅ .env 文件已更新 (已隐藏敏感信息)："
-            cat .env | grep -v "SECRET\|TOKEN" 
-            
-            echo "=== 优雅重启 Nuxt 服务 ==="
-            # 3. 重启服务，--update-env 确保 PM2 读取最新的 .env 文件
-            # 如果是首次部署不存在该进程，则执行 fallback 的启动命令
-            pm2 restart asura-app --update-env || PORT=3005 pm2 start server/index.mjs --name "asura-app"
-            
-            # 4. 保存 PM2 状态，确保 VPS 重启后服务能自启
-            pm2 save
-            
-            echo "✅ Nuxt 部署完成！当前状态："
-            pm2 status
+      
