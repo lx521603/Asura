@@ -37,7 +37,7 @@ jobs:
           
           # ⚠️ 关键细节：SOURCE 末尾必须有斜杠 "/"
           SOURCE: ".output/public/" 
-          TARGET: "/opt/asura/"
+          TARGET: "/opt/www/sites/asura.im/index"
           ARGS: "-avz --delete"
 
       
