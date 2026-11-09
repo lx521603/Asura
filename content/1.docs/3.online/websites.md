@@ -7,70 +7,127 @@ navigation:
 
 
 
+
 # 各种互联网工具
 ## DNS & IP 检测网站
-<CardGroup>
-  <Card title="DNSCHECKER" href="https://dnschecker.org/" iconName="dnschecker">
-    好用的 DNS 生效检测工具
-  </Card>
+::card-group
+  :::card
+  ---
+  icon: i-simple-icons-dnschecker
+  target: _blank
+  title: DNSCHECKER
+  to: https://dnschecker.org/
+  ---
+  好用的 DNS 生效检测工具
+  :::
+  :::card
+  ---
+  icon: i-simple-icons-ip
+  target: _blank
+  title: IP.SB
+  to: https://ip.sb
+  ---
+  IP 检测
+  :::
+  :::card
+  ---
+  icon: i-simple-icons-ip
+  target: _blank
+  title: IPv6 国内测试
+  to: https://testipv6.cn/
+  ---
+  IPv6 国内测试
+  :::
+  :::card
+  ---
+  icon: i-simple-icons-ip
+  target: _blank
+  title: IPv6 国外测试
+  to: https://test-ipv6.com/
+  ---
+  IPv6 国外测试
+  :::
+::
 
-  <Card title="IP.SB" href="https://ip.sb" iconName="ip">
-    IP 检测
-  </Card>
-
-  <Card title="IPv6 国内测试" href="https://testipv6.cn/" iconName="ip">
-    IPv6 国内测试
-  </Card>
-
-  <Card title="IPv6 国外测试" href="https://test-ipv6.com/" iconName="ipv6">
-    IPv6 国外测试
-  </Card>
-  
-</CardGroup>
 
 ## 测速网站
+::card-group
+  :::card
+  ---
+  icon: i-simple-icons-ip
+  target: _blank
+  title: 中国科学技术大学测速网站
+  to: https://test.ustc.edu.cn/
+  ---
+  IPv4 & IPv6 测速
+  :::
+  :::card
+  ---
+  icon: i-simple-icons-ip
+  target: _blank
+  title: 南京大学测速站
+  to: https://test.ustc.edu.cn/
+  ---
+  IPv4 & IPv6 测速
+  :::
+::
 
-<CardGroup>
-  <Card title="中国科学技术大学测速网站" href="https://test.ustc.edu.cn/" iconName="rocket">
-    IPv4 & IPv6 测速
-  </Card>
 
-  <Card title="南京大学测速站" href="https://test.nju.edu.cn/" iconName="rocket">
-    IPv4 & IPv6 测速
-  </Card>
-
-</CardGroup>
 
 ## DNS泄露、分流检测、网络工具
-<CardGroup>
-  <Card title="IPCheck.ing" href="https://ipcheck.ing/" iconName="dnschecker">
-    IP 检测、DNS泄露等测试
-  </Card>
+::card-group
+  :::card
+  ---
+  icon: i-simple-icons-dnschecker
+  target: _blank
+  title: IPCheck.ing
+  to: https://ipcheck.ing/
+  ---
+  IP 检测、DNS泄露等测试
+  :::
+  :::card
+  ---
+  icon: i-simple-icons-ip
+  target: _blank
+  title: 不翻车
+  to: https://bufanche.com/
+  ---
+  IP 检测、DNS泄露、分流检测和生成等
+  :::
+  :::card
+  ---
+  icon: i-simple-icons-ip
+  target: _blank
+  title: DNS Leak Test
+  to: https://browserleaks.com/dns
+  ---
+  DNS泄露测试
+  :::
+  :::card
+  ---
+  icon: i-simple-icons-ip
+  target: _blank
+  title: DNS Leak Test
+  to: https://dnsleaktest.com/
+  ---
+  web-check 是一个用于自动化检查和监控 Web 应用程序的工具。它可以用于验证网站的可用性、性能和内容的一致性，并在检测到问题时发出警报。
+  :::
+::
 
-  <Card title="不翻车" href="https://bufanche.com/" iconName="ip">
-    IP 检测、DNS泄露、分流检测和生成等
-  </Card>
-
-  <Card title="DNS Leak Test" href="https://browserleaks.com/dns" iconName="ip">
-    DNS泄露测试
-  </Card>
-
-  <Card title="DNS Leak Test" href="https://dnsleaktest.com/" iconName="ipv6">
-    DNS泄露测试
-  </Card>
-
-  <Card title="web-check" href="https://web-check.xyz/" iconName="web">
-    web-check 是一个用于自动化检查和监控 Web 应用程序的工具。它可以用于验证网站的可用性、性能和内容的一致性，并在检测到问题时发出警报。
-  </Card>
-  
-</CardGroup>
 
 ## 一些脚本
-<CardGroup>
-  <Card title="VPS 脚本" href="https://kejilion.sh/index-zh-CN.html" iconName="dnschecker">
-    VPS 脚本，谨慎使用
-  </Card>
 
   
-  
-</CardGroup>
+
+::card-group
+  :::card
+  ---
+  icon: i-simple-icons-ip
+  target: _blank
+  title: VPS 脚本
+  to: https://kejilion.sh/index-zh-CN.html
+  ---
+  VPS 脚本，谨慎使用
+  :::
+
+::
