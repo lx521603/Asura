@@ -1,5 +1,7 @@
 ---
 description: "FlashTest - 磁盘容量与性能检测工具"
+navigation:
+  icon: i-lucide-wrench
 ---
 
 # FlashTest
